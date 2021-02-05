@@ -1,9 +1,10 @@
 
 body {
-    background-color: #171C28;
+    background-color: #092546;
     margin: 0;
     padding: 0;
     color: white;
+    place-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -17,7 +18,7 @@ body {
 }
 
 
-.titlemessage {
+.title {
     width: 100%;
     height: 250px;
     z-index: 3;
@@ -27,17 +28,17 @@ body {
     margin-top: -80px;
     /* color: white; */
 }
-.titlemessage .heading p {
+.title .heading p {
     color: white;
     font-weight: 100;
     text-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
     letter-spacing: 9px;
     
 }
-.titlemessage .heading .main {
+.title .heading .main {
     font-size: 35px;
 }
-.titlemessage .heading .sub {
+.title .heading .sub {
     font-size: 15px;
 }
 
@@ -62,7 +63,7 @@ body {
 
 /* section css start here */
 
-.about-section {
+.section {
     padding: 50px 0 50px 0;
 }
 
@@ -70,10 +71,25 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
-#about .about-heading:hover {
-    color: rgb(255, 50, 238);
+.about-heading h4 {
+    font-size: 1/5rem;
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
 
 }
+.heading-span {
+    transition: all 0.4s ease;
+    color:burlywood;
+}
+.heading-span:hover {
+    
+    color: white;
+    letter-spacing: 3px;
+    
+}
+/* #about .about-heading:hover {
+    color: rgb(255, 50, 238);
+
+} */
 
 .aboutImage {
     max-width: 100%;
@@ -92,34 +108,41 @@ body {
     text-align: center;
 }
 #about .col-md-7 p:hover {
-    color: blueviolet;
+    color: burlywood;
     transition: all 1s ease;
-    transform: scale(1.06);
+    transform: scale(1.1);
+
+    
 
 }
 
 
 /* what i do section */
 
-.what-I-Do {
-    padding: 50px 0 50px 0;
-    
-}
-.what-I-Do .what-i-do-title {
+#whatido {
     width: 100%;
     text-align: center;
-    padding: 10px 0 40px 0;
+    padding: 30px 0 40px 0;
+    
 }
-.what-I-Do h4:hover {
-    color: rgb(255, 50, 238);
+.what-i-do-title h4 {
+    margin: 30px 0 60px 0;
+    /* font-size: 1.5rem; */
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
 }
 
 .whatidoimg img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    box-shadow: 1px 3px 15px 4px #000000;
     padding: 0 auto;
     margin: 5px auto;
+    transition: 0.2s;
+}
+.whatidoimg img:hover {
+    transform: scale(0.9);
+    box-shadow: 1px 2px 10px 2px #000000;
 }
 .whatido-left {
     text-align: center;
@@ -131,17 +154,116 @@ body {
 }
 #whatido h5 {
     margin: 20px 0 40px 0;
-    color: blueviolet;
+    color: burlywood;
 }
 #whatido p {
     margin: 30px 0 20px 0;
 }
 
-#skills {
-    margin: 50px 0 30px 0;
+.skills-title {
+    padding: 50px 0 50px 0px;
+    color: burlywood;
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.skills-title:hover {
+    color: white;
+    letter-spacing: 4px;
+    transition: all 0.6s ease-out;
+}
+
+#skills .card {
+    /* border: 2px solid #090909; */
+    padding: 2px;
+    /* margin-left: 5px; */
+}
+#skills .row h5 {
+    margin-bottom: 40px;
+}
+#skills .row ul {
+    padding-left: 5px;
+}
+
+#skills li {
+    text-align: left;
+    margin: 20px;
+}
+#skills li:hover,
+#skills h5:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.03);
+    color: burlywood;
+}
+#skills .row {
+    padding: 0px 40px 40px 40px;
+}
+#skills h5 {
+    color: burlywood;
+}
+
+#projects {
+    width: 100%;
+    height: auto;
+}
+.projects-title {
+    padding: 50px 0 50px 0px;
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
+    /* margin: 40px; */
+}
+.projects-title:hover {
+    color: burlywood;
+    letter-spacing: 4px;
+    transition: all 0.6s ease-out;
     
 }
-.skills-content {
-    width: 100%;
-    height: 500px;
+.projects-carousel {
+    max-width: 1150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
 }
+
+.projects-carousel .cards {
+    flex: 1;
+    margin: 20px auto;
+    width: 210px;
+    padding: 5px 5px 8px 5px;
+    /* border: 1px solid #0a2338; */
+    /* border-radius: 50%; */
+    box-shadow: 2px 4px 15px 5px #000000;
+}
+.projects-carousel .cards img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.projects-carousel .cards button {
+    background-color: burlywood;
+    color: 092546;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 1px 1px 4px 2px #0d0d1a;
+    padding: 2px 15px 2px 15px;
+    transition: 0.6s;
+}
+.projects-carousel .cards button:hover {
+    transform: scale(0.9);
+}
+.carousel-cards h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: burlywood;
+}
+.carousel-cards p {
+    font-size: 12px;
+}
+
+#contact {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(-100deg,burlywood 50%,#092546  50%);
+}
+

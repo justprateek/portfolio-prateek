@@ -16,6 +16,28 @@ $(document).ready(function () {
         // fadeOutClass: 'typed-fade-out',
         // fadeOutDelay: 500,
 
+    });
+
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:90,
+        autoplay:true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        
+        // nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            845:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
     })
 
 });
