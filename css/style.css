@@ -49,15 +49,12 @@ body {
 }
 .title .heading .main {
     font-size: 35px;
+    margin: 0 10px;
 }
 .title .heading .sub {
     font-size: 15px;
 }
 
-
-.slides-navigation {
-    z-index: 4;
-}
 
 
 /* section css start here */
@@ -85,11 +82,6 @@ body {
     letter-spacing: 3px;
     
 }
-/* #about .about-heading:hover {
-    color: rgb(255, 50, 238);
-
-} */
-
 .aboutImage {
     max-width: 100%;
     padding: 0 20px 0 20px;
@@ -110,9 +102,6 @@ body {
     color: burlywood;
     transition: all 1s ease;
     transform: scale(1.1);
-
-    
-
 }
 
 
@@ -160,6 +149,10 @@ body {
     margin: 30px 0 20px 0;
 }
 
+
+
+/* skillss section */
+
 #skills .skills-title h4 {
     padding: 50px 0 50px 0px;
     font-size: 30px;
@@ -202,6 +195,10 @@ body {
     color: burlywood;
 }
 
+
+
+/* projects section */
+
 #projects {
     width: 100%;
     height: auto;
@@ -217,7 +214,6 @@ body {
     color: white;
     letter-spacing: 4px;
     transition: all 0.6s ease-out;
-    
 }
 .projects-carousel {
     max-width: 1150px;
@@ -275,6 +271,9 @@ body {
     box-shadow: 1px 1px 5px 2px #000;
 }
 
+
+/* contact section */
+
 #contact {
     text-align: center;
 }
@@ -306,8 +305,8 @@ body {
 
 
 
-/* to-top section */
 
+/* to-top section */
 
 #to-top {
     text-align: center;
