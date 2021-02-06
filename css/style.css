@@ -19,6 +19,10 @@ body {
     background-color: rgba(0,0,0,0.4);
 }
 
+.slides-container img {
+    filter: grayscale(100%);
+}
+
 
 .title {
     width: 100%;
