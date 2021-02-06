@@ -25,8 +25,11 @@ $(document).ready(function () {
         autoplay:true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
-        
-        // nav:true,
+        slideBy: 2,
+        dots: true,
+        dotsEach: true,
+        lazyLoad: true,
+        nav:true,
         responsive:{
             0:{
                 items:1

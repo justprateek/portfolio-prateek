@@ -1,4 +1,6 @@
-
+html {
+    padding: 0;
+}
 body {
     background-color: #092546;
     margin: 0;
@@ -23,7 +25,7 @@ body {
     height: 250px;
     z-index: 3;
     position: absolute;
-    top: 50%;
+    top: 40%;
     text-align: center;
     margin-top: -80px;
     /* color: white; */
@@ -34,6 +36,16 @@ body {
     text-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
     letter-spacing: 9px;
     
+}
+#scroll-down {
+    width: 20px;
+    position: absolute;
+    top: 400px;
+    margin: 0 auto;
+    transition: all 0.2s ease-in;
+}
+#scroll-down:hover {
+    transform: scale(1.3);
 }
 .title .heading .main {
     font-size: 35px;
@@ -46,20 +58,7 @@ body {
 .slides-navigation {
     z-index: 4;
 }
-.slides-navigation .prev,
-.slides-navigation .next {
-    width: 30px;
-    height: 30px;
-    background-size: cover;
 
-}
-.slides-navigation a.prev {
-    left: 20px;
-
-}
-.slides-navigation a.next {
-    right: 40px;
-}
 
 /* section css start here */
 
@@ -78,7 +77,7 @@ body {
 }
 .heading-span {
     transition: all 0.4s ease;
-    color:burlywood;
+    color:hsl(34, 57%, 70%);
 }
 .heading-span:hover {
     
@@ -264,11 +263,84 @@ body {
 .carousel-cards p {
     font-size: 12px;
 }
+.owl-carousel .owl-nav button {
+    margin: 0 5px 0 5px;
+}
+.owl-carousel .owl-nav span {
+    padding: 0 10px 0 10px;
+    border: none;
+}
+.owl-carousel .owl-nav button:hover {
+   transform: scale(1.05);
+    box-shadow: 1px 1px 5px 2px #000;
+}
 
 #contact {
-    width: 100%;
-    height: 70vh;
-    font-size: 30px;
-    background: linear-gradient(-100deg,burlywood 50%,#092546  50%);
+    text-align: center;
 }
+#contact .contact-title h4 {
+    font-size: 30px;
+    margin-bottom: 10%;
+    
+}
+
+#contact .resume {
+    width: 300px;
+    display: block;
+    margin: 30px auto 100px;
+    
+    /* border: 1px solid #0d0d1a; */
+    padding: 5px 10px 5px 10px;
+    box-shadow: 2px 2px 5px 4px #000;
+}
+.resume a {
+    font-size: 20px;
+    text-decoration: none;
+    color: burlywood;
+}
+#contact .contact-icons i {
+    font-size: 44px;
+    margin: 20px 15px 60px 15px;
+    color: burlywood;
+}
+
+
+
+/* to-top section */
+
+
+#to-top {
+    text-align: center;
+    background: burlywood;
+    margin-bottom: 0;
+    padding: 10px 0 5px 0;
+}
+
+
+#to-top-image {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+
+
+#to-top p {
+    font-size: 10px;
+    font-weight: bold;
+    color: #090909;;
+    opacity: 0;
+    transition: 1s ease;
+    margin-bottom: 0;
+    
+}
+#to-top:hover img {
+    transform: scale(1.06);
+
+}
+#to-top:hover p {
+   opacity: 1;
+}
+
 
