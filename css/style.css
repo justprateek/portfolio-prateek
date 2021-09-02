@@ -278,6 +278,38 @@ body {
 }
 
 
+/* research section */
+
+#research .research-title h4 {
+    padding: 0 0 50px 0px;
+    font-size: 30px;
+    color: burlywood;
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+#research h5 {
+    color: burlywood;
+}
+.research-title:hover {
+    color: white;
+    letter-spacing: 4px;
+    transition: all 0.6s ease-out;
+}
+.research-cards {
+    margin: 0 20px 30px 20px;
+}
+.research-head {
+    display: flex;
+    margin-bottom: 15px;
+}
+#date {
+    margin-left: auto;
+}
+.important {
+    color: burlywood;
+}
+
+
 /* contact section */
 
 #contact {
