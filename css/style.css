@@ -160,7 +160,7 @@ body {
 /* skillss section */
 
 #skills .skills-title h4 {
-    padding: 50px 0 50px 0px;
+    padding: 0px 0 50px 0px;
     font-size: 30px;
     color: burlywood;
     text-shadow: 2px 4px 8px rgb(0, 0, 0);
@@ -188,17 +188,20 @@ body {
     text-align: left;
     margin: 20px;
 }
-#skills li:hover,
 #skills h5:hover {
     transition: all 0.2s ease-out;
     transform: scale(1.03);
     color: burlywood;
 }
 #skills .row {
-    padding: 0px 40px 40px 40px;
+    padding: 0px 40px 0px 40px;
 }
 #skills h5 {
     color: burlywood;
+}
+#date {
+    margin-left: auto;
+    /* hello */
 }
 
 
@@ -280,16 +283,7 @@ body {
 
 /* research section */
 
-#research .research-title h4 {
-    padding: 0 0 50px 0px;
-    font-size: 30px;
-    color: burlywood;
-    text-shadow: 2px 4px 8px rgb(0, 0, 0);
-    margin-bottom: 20px;
-}
-#research h5 {
-    color: burlywood;
-}
+
 .research-title:hover {
     color: white;
     letter-spacing: 4px;
@@ -302,10 +296,7 @@ body {
     display: flex;
     margin-bottom: 15px;
 }
-#date {
-    margin-left: auto;
-    /* hello */
-}
+
 .important {
     color: burlywood;
 }
